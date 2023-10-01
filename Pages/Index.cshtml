@@ -1,37 +1,7 @@
 ﻿@page
 @model RazorPages.Pages.Index
-
 @{
-    Layout = null;
+    ViewData["Title"] = "Página Principal";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    <partial name="Shared/NavMenuPartial"/>
-    <h1> Category </h1>
-    <table>
-        <thead>
-        <tr>
-            <td>"Id"</td>
-            <td>"Title"</td>
-            <td>"Price"</td>
-        </tr>
-        @foreach (var item in Model.Categories)
-        {
-            <tr>
-                <td> @item.id </td>
-                <td> @item.Title </td>
-                <td> @item.Price.ToString("C", new CultureInfo("pt-BR")) </td>
-            </tr>
-        }
-        </thead>
-    </table>
-</div>
-</body>
-</html>
+<h1>Home</h1> 

@@ -1,20 +1,10 @@
-﻿@page
+﻿@page "~/sobre"
 @model RazorPages.Pages.About
-
 @{
-    Layout = null;
+    ViewData["Title"] = "Sobre";
+}
+<h1> Sobre </h1>
+@section scripts {
+    <script src="~/js/site.js"></script>
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    <partial name="Shared/NavMenuPartial"/>
-    <h1> Sobre </h1>
-</div>
-</body>
-</html>
